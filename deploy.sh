@@ -8,7 +8,7 @@ version=$1
 
 PROJECT_NAME=demo
 
-SERVER_HOST=106.14.72.68
+SERVER_HOST=
 
 SERVER_FOLDER=/usr/src
 
