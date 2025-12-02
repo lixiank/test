@@ -155,11 +155,11 @@ public class UserTest {
         threadPool.shutdown();
         // 清理内存
         futures.clear();
+        excel.finish();
         data.clear();
     }
-    private Integer test1(List<User> list ,ExcelWriter excel, WriteSheet sheet3 )  {
+    private synchronized Integer test1(List<User> list ,ExcelWriter excel, WriteSheet sheet3 )  {
             excel.write(list,sheet3);
-            excel.finish();
             return 0;
     }
 }
